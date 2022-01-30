@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.app03activityintent">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App03ActivityIntent">
+<!--        <activity android:name=".Intent01AllUI" android:exported="true">-->
+<!--        <activity android:name=".Intent02First" android:exported="true">-->
+<!--        <activity android:name=".Intent02FirstActivityLifeCycle" android:exported="true">-->
+<!--        <activity android:name=".Intent03LifeCycleBundle" android:exporsted="true">-->
+        <activity android:name=".Intent04FirstMessage" android:exported="true">
+<!--        <activity android:name=".Intent05Implicit" android:exported="true">-->
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- FQCN use -->
+<!--        <activity android:name="example.app03activityintent.Intent02Second"/>-->
+<!--        <activity android:name=".Intent02Third"/>-->
+
+        <activity android:name=".Intent02SecondActivityLifeCycle"/>
+        <activity android:name=".Intent02ThirdActivityLifeCycle"/>
+
+        <activity android:name=".Intent04SecondMessage"/>
+        <activity android:name=".Intent04ThirdMessage"/>
+    </application>
+
+</manifest>

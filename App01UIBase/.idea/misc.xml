@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/workspace/App01UIBase/app/src/main/res/layout/activity_main.xml" value="0.296195652173913" />
+        <entry key="..\:/Android/workspace/App01UIBase/app/src/main/res/layout/activity_uibase02.xml" value="0.36302083333333335" />
+        <entry key="..\:/Android/workspace/App01UIBase/app/src/main/res/layout/activity_uibase03.xml" value="0.203125" />
+        <entry key="..\:/Android/workspace/App01UIBase/app/src/main/res/layout/activity_uibase04.xml" value="0.203125" />
+        <entry key="..\:/Android/workspace/App01UIBase/app/src/main/res/layout/activity_uibaselayout051.xml" value="0.203125" />
+        <entry key="..\:/Android/workspace/App01UIBase/app/src/main/res/layout/activity_uibaselayout052.xml" value="0.203125" />
+        <entry key="..\:/Android/workspace/App01UIBase/app/src/main/res/layout/activity_uibaselayout07.xml" value="0.203125" />
+        <entry key="..\:/Android/workspace/App01UIBase/app/src/main/res/layout/activity_uibaselayout08.xml" value="0.25" />
+        <entry key="..\:/Android/workspace/App01UIBase/app/src/main/res/layout/activity_uibaselayout09.xml" value="0.203125" />
+        <entry key="..\:/Android/workspace/App01UIBase/app/src/main/res/layout/activity_uibaselayout11.xml" value="0.203125" />
+        <entry key="..\:/Android/workspace/App01UIBase/app/src/main/res/layout/etc02_framelayout.xml" value="0.20677083333333332" />
+        <entry key="..\:/Android/workspace/App01UIBase/app/src/main/res/layout/etc03_tablelayout.xml" value="0.203125" />
+        <entry key="..\:/Android/workspace/App01UIBase/app/src/main/res/layout/etc04_tablelinear.xml" value="0.203125" />
+        <entry key="..\:/Android/workspace/App01UIBase/app/src/main/res/layout/messagelayout13.xml" value="0.203125" />
+        <entry key="..\:/Android/workspace/App01UIBase/app/src/main/res/layout/new_message_module13.xml" value="0.203125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

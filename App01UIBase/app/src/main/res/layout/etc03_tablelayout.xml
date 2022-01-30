@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout Definition 	: TableLayout  -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="5dp"
+	android:background="#000000">
+	
+	<TableRow android:padding="5dp" android:background="#cccccc" >
+		<TextView 	android:text="국어" android:textSize="30sp" android:padding="10dp"
+		    		android:background="#ffff00" />
+		<TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+		<TextView android:text="수학" android:textSize="30sp" android:padding="10dip" />
+	</TableRow>
+	
+	<TableRow android:padding="5dp" android:background="#ffff00" 
+	    				android:layout_marginTop="20dp">
+		<TextView 	android:text="88" android:textSize="30sp" android:padding="10dp" 
+		    		android:background="#cccccc" android:gravity="center" />
+		<TextView android:text="92" android:textSize="30sp" android:padding="10dp" />
+		<TextView android:text="76" android:textSize="30sp" android:padding="10dp" />
+	</TableRow>
+	
+</TableLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<!-- 필요한 Data Array Definition -->
+	<string-array name="spinner_data">
+        <item>선택하세요</item>
+        <item>개발자</item>
+        <item>분석설계자</item>
+        <item>코더</item>
+        <item>타이피스트</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.app01uibase">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App01UIBase">
+
+        <!-- UIBase01 -->
+        <!--<activityandroid:name=".UIbase01"android:exported="true">-->
+
+
+        <!-- UIBase02 -->
+        <!--<activityandroid:name=".UIbase02"android:exported="true">-->
+
+
+        <!-- uibaselayout03 -->
+        <!--<activityandroid:name=".uibaselayout03"android:exported="true">-->
+
+
+        <!-- uibaselayout04 -->
+        <!--<activityandroid:name=".uibaselayout04"android:exported="true">-->
+
+
+        <!-- uibaselayout051 -->
+        <!--<activityandroid:name=".uibaselayout051"android:exported="true">-->
+
+
+        <!-- uibaselayout052 -->
+        <!--<activityandroid:name=".uibaselayout052"android:exported="true">-->
+
+
+        <!-- uibaselayout06 -->
+        <!--<activityandroid:name=".uibaselayout06"android:exported="true">-->
+
+
+        <!-- uibaselayout07 -->
+        <!--<activityandroid:name=".uibaselayout07"android:exported="true">-->
+
+
+        <!-- uibaselayout08 -->
+        <!--<activityandroid:name=".uibaselayout08"android:exported="true">-->
+
+
+        <!-- uibaselayout09 -->
+        <!-- <activity android:exported="true" android:name=".uibaselayout09">-->
+
+        <!-- uibaselayout10 -->
+        <!--<activityandroid:name=".uibaselayout10"android:exported="true">-->
+
+        <!-- uibaselayout12 -->
+        <!-- <activity android:name=".UIbaseLayoutCode12">-->
+
+        <!-- uibaselayout13 -->
+        <activity android:name=".UIBaseLayoutCode13"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

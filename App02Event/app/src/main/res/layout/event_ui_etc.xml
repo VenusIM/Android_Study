@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/color_dkgray"
+
+    android:padding="@dimen/layout_padding">
+
+    <android.widget.Button
+        android:id="@+id/button01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/color_gray"
+        android:textColor="@color/color_white"
+        android:textSize="20sp"
+        android:text=" Button 1 "/>
+
+    <android.widget.Button
+        android:id="@+id/button02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button01"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/view_layout_margin"
+        android:background="@color/color_ltgray"
+        android:textColor="@color/color_white"
+        android:textSize="20sp"
+        android:text=" Button 2 "/>
+
+    <android.widget.Button
+        android:id="@+id/button03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_margin="@dimen/view_layout_margin"
+        android:background="@color/color_gray"
+        android:textColor="@color/color_white"
+        android:textSize="20sp"
+        android:text=" Button 3"
+        android:onClick="xmlOnClick"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/button02"
+        android:layout_above="@id/button03"
+
+        android:layout_margin="@dimen/view_layout_margin"
+        android:padding="@dimen/view_padding"
+        android:background="@color/color_white">
+
+
+    <example.app02event.custom.widget.EventTextView
+        android:id="@+id/eventTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/view_padding"
+        android:background="@color/color_transparent_magenta"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text=" Screen Touch Event 처리 가능한
+                    \n Call Back Method 를 갖는
+                    \n Custom View Screen 을
+                    \n Touch 해보세요"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout Definition 	: FrameLayout : 카드(?) -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+    <!--  Button View 가 ImageView 보다 먼저일 경우 확인 -->
+	<Button
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="Button 안보임"/>
+	
+	<ImageView  
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:background="#cccccc"
+		android:src="@drawable/abc"/>
+	
+	<!-- :: 실행 방법
+			1. 지금 상태 실행
+			2. ImageView 의 
+				android:background="#cccccc"
+				지우고 실행
+			3. 2 상태에서 아래의 주석 풀고 실행 
+	-->
+	
+	<!--
+	<Button
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="center" 
+		android:text="Button 보임"/>
+	 -->
+		
+</FrameLayout>

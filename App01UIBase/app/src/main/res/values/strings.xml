@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">App01UIBase</string>
+
+    <!-- 필요한 문자열  Deffinition -->
+    <string name="greeting">환영합니다.</string>
+    <string name="input_ok">입력완료</string>
+</resources>

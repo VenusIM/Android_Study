@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout Definition : LinearLayout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ltgray" >
+
+
+    <!-- 중첩레이어 :LinearLayout  -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.widget.Button
+            android:id="@+id/button_page1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1 번째화면" />
+        <android.widget.Button
+            android:id="@+id/button_page2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2 번째화면" />
+    </LinearLayout>
+
+
+    <!-- 중첩레이아웃 : FrameLayout  -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"	>
+
+        <!-- 충첩에 중첩레이아웃 : 02.Event(base)/event_base_get_set.xml 참조 copy -->
+        <RelativeLayout
+            android:id="@+id/page1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"  >
+
+            <!-- View Definition -->
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="문자출력 View" />
+
+            <EditText
+                android:id="@+id/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview"
+                android:text="문자입력 View" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittext"
+                android:text="체크박스뷰" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/checkbox" >
+
+                <RadioButton
+                    android:id="@+id/radioGroup_radiobutton01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="라이오버튼01" />
+                <RadioButton
+                    android:id="@+id/radioGroup_radiobutton02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="라이오버튼02" />
+
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radiogroup"
+                android:entries="@array/spinner_data"/>
+
+            <DatePicker
+                android:id="@+id/datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner"/>
+
+        </RelativeLayout>
+
+
+        <!-- 충첩에 중첩레이아웃 : 02.Event(base)/event_ui.xml 참조 copy -->
+        <RelativeLayout
+            android:id="@+id/page2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_dkgray"
+            android:padding="@dimen/layout_padding" >
+
+            <!-- View Definition -->
+            <android.widget.Button
+                android:id="@+id/button01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/color_gray"
+                android:textColor="@color/color_white"
+                android:textSize="20sp"
+                android:text="1번 Button" />
+
+            <android.widget.Button
+                android:id="@+id/button02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button01"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/view_layout_margin"
+                android:background="@color/color_ltgray"
+                android:textColor="@color/color_white"
+                android:textSize="20sp"
+                android:text="2번 Button" />
+
+            <android.widget.Button
+                android:id="@+id/button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_margin="@dimen/view_layout_margin"
+                android:background="@color/color_gray"
+                android:textColor="@color/color_white"
+                android:textSize="20sp"
+                android:text="Event 처리 3번 Button" />
+
+
+            <!-- Layout 의 중첩 : Layout IS A View -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/button02"
+                android:layout_above="@id/button03"
+
+                android:layout_margin="@dimen/view_layout_margin"
+                android:padding="@dimen/view_padding"
+                android:background="@color/color_white">
+
+                <!-- Custom Widget(View) Definiton -->
+                <example.app02event.custom.widget.EventTextView
+                    android:id="@+id/eventTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:padding="@dimen/view_padding"
+
+                    android:background="@color/color_transparent_magenta"
+                    android:textColor="@color/color_black"
+                    android:text="Screen Touch Event 를 처리할수 있는 \nCall Back Method 를 갖는 Custom View \nScreen 을 Touch 해보세요."/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

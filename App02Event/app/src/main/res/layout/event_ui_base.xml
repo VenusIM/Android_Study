@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/color_cyan"
+    android:padding="@dimen/layout_horizontal_padding">
+
+    <android.widget.Button
+        android:id="@+id/button01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+
+        android:gravity="center"
+
+        android:text="First Button"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"></android.widget.Button>
+
+    <android.widget.Button
+        android:id="@+id/button02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button01"
+        android:layout_marginTop="@dimen/view_layout_margin"
+
+        android:background="@color/color_magenta"
+        android:gravity="center"
+        android:text="Second Button"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"></android.widget.Button>
+
+    <android.widget.Button
+        android:id="@+id/button03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/view_layout_margin"
+
+        android:layout_marginTop="@dimen/view_layout_margin"
+        android:layout_marginEnd="@dimen/view_layout_margin"
+
+        android:layout_marginBottom="@dimen/view_layout_margin"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Event 처리 Third Button"
+        android:textColor="@color/white"
+        android:textSize="20sp"></android.widget.Button>
+
+
+
+
+
+
+</RelativeLayout>
